@@ -1,0 +1,132 @@
+/* ^ genara style */
+:root{
+    --main-color: rgba(214, 46, 51 , 0.6);
+    scroll-behavior: auto !important;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #fff;
+}
+
+/* * side bar */
+.side-bar{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: left 0.3s;
+}
+.side-bar .side-bar-content{
+    background-color: #111111;
+    width: 250px;
+}
+
+.side-bar .side-bar-content i{
+    /* text-align: right; */
+    margin-left: 170px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.side-bar .side-bar-content a{
+    transition: color 0.3s;
+}
+.side-bar .side-bar-content a:hover,
+.side-bar .side-bar-content i:hover{
+    color: var(--main-color);
+}
+.side-bar-icon{
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+}
+
+/* & home section */
+
+section.home{
+    background-image: linear-gradient(rgba(214, 46, 51 , 0.6), rgba(214, 46, 51 , 0.6)),
+    url(../images/events-heavenly-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+}
+
+
+/* ^ drop down section */
+
+.drop-down h3{
+    background-color: var(--main-color);
+    padding-block: 7px;
+    margin: 0;
+    cursor: pointer;
+}
+.drop-down div{
+    padding: 7px;
+    background-color: #ccc;
+}
+.drop-down div:not(.frist){
+    display: none;
+}
+
+/* ~ counter section */
+.counter{
+    background-image: linear-gradient(rgba(214, 46, 51 , 0.6), rgba(214, 46, 51 , 0.6)),
+    url(../images/invitation-2508607__340.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+@media screen and (max-width: 762px) {
+    .counter{
+        height: auto;
+    }
+}
+.counter .container{
+    padding-block: 85px;
+}
+.counter .time{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* ^ contact section */
+.contact{
+    color: #777;
+}
+.contact .pink-color{
+    color: #D62E33;
+}
+.contact .icon{
+    border: 1px solid #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    width: 40px;
+    height: 40px;
+    /* font-size: 20px; */
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+.contact .icon:hover{
+    background-color: #D62E33;
+    color: #fff;
+    border: #D62E33;
+}
+.contact form textarea{
+    resize: vertical;
+}
+.contact form button{
+    padding: 10px 15px;
+    background-color: #D62E33;
+    color: #fff;
+    border: transparent;
+}
